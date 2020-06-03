@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 4</title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<script type="text/javascript" src="js/validacion.js"></script>
+</head>
+<body onpaste ="return false" oncopy ="return false">
+<section>
+<nav>
+	<a href="../index.html">Inicio</a>
+	<a href="../ejer1/ejer1.html"> Ejercicio 1 </a>
+	<a href="../ejer2/ejer2.html">Ejercicio 2 </a>
+	<a href="../ejer3/ejer3.html">Ejercicio 3 </a>
+	<a href="../ejer4/ejer4.html">Ejercicio 4 </a>
+	
+	<div class="animation start-home"></div>
+</nav>
+		<h1 id="p1">Ejercicio 4</h1>
+		<p>
+			Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades si este se le asigna como un porcentaje de su salario mensual que depende de su antiguedad en la empresa.
+			<br>
+			<br>
+			Menos de 1 año :                    5% del salario <br>
+			1 año o más y menos de 2 años: 		7% del salario <br>
+			2 años o más y menos de 5 años:		10% del salario <br>
+			5 años o más y menos de 10 años:	15% del salario <br>
+			10 años o más 						20% del salario 
+		</p>
+
+		<form name="Ejercicio4" method="post">
+			<table>
+				<tr>
+					<td>Cual es su salario mensual : </td>
+					<td><input type="text" name="salario_mensual" onkeypress="validardeci(event)"></td>
+				</tr>
+				<tr>
+					<td>Cuantos años lleva en la empresa: </td>
+					<td><input type="text" name="años" onkeypress="return validarente(event)"></td>
+				</tr>
+				<tr>
+					<td><input type="button" name="utilidad" value="Cualcular la utilidad" onclick="problema4()" class="botoness"></td>
+				</tr>
+				<tr>
+					<td>Su utilidad anual es de: </td>
+					<td><input type="text" id="total" class="input_text" readonly="readonly"></td>
+				</tr>
+				<tr>
+					<td><input type="reset" name="borrar" value="Borrar" class="botoness"></td>
+				</tr>
+			</table>
+		</form>
+	</section>
+	<img src=img/ia.jpg>
+</body>
+</html>
